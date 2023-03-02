@@ -321,7 +321,7 @@ class RollingOpsManager(Object):
         """
         raise NotImplementedError
 
-    def _update_locks(self: CharmBase, event: Union[RelationChangedEvent, LeaderElectedEvent]):
+    def _update_locks(self: CharmBase, _):
         """Update Locks.
 
         First, determine whether this unit has been granted a lock. If so, emit a RunWithLock
